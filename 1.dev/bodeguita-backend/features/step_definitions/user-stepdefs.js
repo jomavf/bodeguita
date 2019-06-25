@@ -1,46 +1,33 @@
 const assert = require('assert');
 const { Given, When, Then } = require('cucumber');
 const request = require('supertest');
+const { expect } = require('chai')
 import app from '../../src/app'
 // import mock from 'mockito'
 
 var userObj = {}
 
-// ? Given despues de ingresar a la web del sistema desde el navegador
-
         Given('despues de ingresar a la web del sistema desde el navegador', function () {
-          //mockear esta funcion
-          // MockitoAnnotations.initMocks(this);
-          // doNothing().when(response).sendRedirect("http://www.bode.com");
-          // Assert.assertTrue(true);
+          assert.equal(true,true)
         });
-       
-//    ? When escribo en campo Usuario el valor de "jalmacen"
 
         When('escribo en campo Usuario el valor de {string}', function (string) {
           // Write code here that turns the phrase above into concrete actions
           // this.userobj.code = "jalmacen"           
-          userObj.code = string           
+          userObj.code = string   
+          expect(true).to.eql(true)
         });
-       
-//    ? And escribo en campo Contraseña el valor de "jalmacen"
 
         When('escribo en campo Contraseña el valor de {string}', function (string) {
           userObj.password = string
+          expect(true).to.eql(true)
         });
 
-//    ? And luego hago click en el boton de Entrar
-
-        When('luego hago click en el boton de Entrar', async function () {
+        When('luego hago click en el boton de Entrar',{timeout:5000}, async function () {
           let response = await request(app).post('/user/login').send(userObj)
           assert.equal(response.body.data.isAuth,true)
         });
-       
-//    ? Then el sistema me direcciona a la pantalla de Bienvenida
 
         Then('el sistema me direcciona a la pantalla de Bienvenida', function () {
-          //mock
-          // MockitoAnnotations.initMocks(this);
-          // doNothing().when(response).sendRedirect("http://www.bode.com/bienvenida");
-          // Assert.assertTrue(true);
+          expect(true).to.eql(true)
         });

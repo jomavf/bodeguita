@@ -5,7 +5,7 @@
   "main": "src/app.js",
   "scripts": {
     "unitTest": "jest --detectOpenHandles",
-    "test": "cucumber-js --require-module @babel/register",
+    "test": "cucumber-js --require-module @babel/register --exit",
     "start": "./node_modules/.bin/nodemon --exec babel-node src/app.js",
     "serve": "./node_modules/.bin/node dist/app.js",
     "babel": "./node_modules/.bin/babel -D -d dist/ src"
@@ -31,6 +31,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
+    "chai": "^4.2.0",
     "cookie-parser": "^1.4.3",
     "cors": "^2.8.4",
     "dotenv": "^5.0.1",
