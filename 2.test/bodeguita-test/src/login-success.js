@@ -10,6 +10,7 @@ let loginSuccess = async function loginSuccess(driver,time,url) {
     let password = sheet.D2.v
     let message = sheet.E2.v
 	
+	await driver.sleep(time)
 	await driver.get(url || localURL);
 	await driver.sleep(time)
 	await driver.findElement(By.id('code')).sendKeys(code);

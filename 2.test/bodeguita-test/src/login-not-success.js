@@ -10,6 +10,7 @@ let loginNotSuccess = async function loginNotSuccess(driver,time,url) {
     let password = sheet.D3.v
     let message = sheet.E3.v
     
+    await driver.sleep(time)
     await driver.get(url || localURL);
     await driver.sleep(time)
     await driver.findElement(By.id('code')).sendKeys(code);

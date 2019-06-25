@@ -61,8 +61,9 @@ const listProductSuccess = require('./list-product-success');
 		} finally {
 			await firefox_driver.quit()
     }
-
+ 
     let safari_driver = await new Builder().forBrowser('safari').build();
+
     try {
       await loginNotSuccess(safari_driver,time,url);
       await loginSuccess(safari_driver,time,url); 
@@ -82,5 +83,4 @@ const listProductSuccess = require('./list-product-success');
 		} finally {
 			await safari_driver.quit()
     }  
-
 })();
