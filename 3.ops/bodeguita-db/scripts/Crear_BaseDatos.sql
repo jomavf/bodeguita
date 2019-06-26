@@ -4,3 +4,4 @@
 -- GRANT ALL ON bodebd.* TO 'veliz'@'%' IDENTIFIED BY 'veliz';
 -- GRANT ALL ON bodebd.* TO 'veliz'@'localhost' IDENTIFIED BY 'veliz';
 -- FLUSH PRIVILEGES;
+CREATE DATABASE bodeguita;
