@@ -13,11 +13,12 @@
 // }
 
 // export default app;
+
 import express from 'express'
 import appConfig from './config/app-config'
 import routes from './routes/routes'
 
-const appFunc = function start(port) {
+const appFunc = function(port){
     const app = express();
     appConfig(app, true);
     routes(app);
