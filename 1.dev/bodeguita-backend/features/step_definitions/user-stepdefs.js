@@ -24,7 +24,7 @@ var userObj = {}
         });
 
         When('luego hago click en el boton de Entrar',{timeout:5000}, async function () {
-          let response = await request(app(9090)).post('/user/login').send(userObj)
+          let response = await request(app(6000)).post('/user/login').send(userObj)
           assert.equal(response.body.data.isAuth,true)
         });
 
