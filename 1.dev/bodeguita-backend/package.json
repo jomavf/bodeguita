@@ -41,7 +41,7 @@
     "express-locale": "^1.0.5",
     "express-mung": "^0.5.1",
     "express-query-params": "^1.1.0",
-    "html-pdf-chrome": "^0.5.0",
+    "html-pdf-chrome": "^0.6.1",
     "i18n": "^0.8.3",
     "jsonwebtoken": "^8.2.1",
     "mongoose": "^5.0.17",
