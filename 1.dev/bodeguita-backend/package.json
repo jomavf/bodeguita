@@ -36,7 +36,7 @@
     "cors": "^2.8.4",
     "dotenv": "^5.0.1",
     "ejs": "^2.6.1",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "express-async-errors": "^3.1.1",
     "express-locale": "^1.0.5",
     "express-mung": "^0.5.1",
